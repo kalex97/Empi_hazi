@@ -21,8 +21,11 @@ female = pd.concat([fn.genderfilter(
 
 
 fn.plot_degree_distribution(network)
+#https://user-images.githubusercontent.com/95303784/144875018-cb9f8525-0a34-4203-953c-e1999fab0498.png
+
 '''
-https://user-images.githubusercontent.com/95303784/144875018-cb9f8525-0a34-4203-953c-e1999fab0498.png
+A plot a node-ok fokszámát azok gyakoriságának függvényében ábrázolja.
+
 Az ábrából látható, hogy a emberek legnagyob része kevés ismerőssel rendelkezik,
 a legtöbb node fokszáma alacsony, viszont van pár ember aki a többiekhez képest
 nagyon sokkal(~100 nagyságrend), az eloszlás nem normális, vannak extrém, kiugró értékek.
@@ -30,8 +33,11 @@ nagyon sokkal(~100 nagyságrend), az eloszlás nem normális, vannak extrém, ki
 
 plt.figure()
 fn.plot_age_distribution_by_gender(full_profiles)
+#https://user-images.githubusercontent.com/95303784/144875020-697b41c0-99b1-4640-876d-5d723ba2f145.png
+
 '''
-https://user-images.githubusercontent.com/95303784/144875020-697b41c0-99b1-4640-876d-5d723ba2f145.png
+A plot a nodeok életkorát azok gyakoriságának függvényében, nemek szerinti bontásban.
+
 Az adatbázisban 15-50 éves korig vannak megfigyelések, az ábrából látható, hogy
 a közödsségi portálok sokkal népszerűbbek a fiatalok körében, a férfiak vannak
 többségben a 20-40 éves korosztályban, efelett már a nők, ez az eloszlás társadalmi
@@ -40,8 +46,11 @@ szinten is valamelyest megfigylehető.
 
 plt.figure()
 fn.plot_node_degree_by_gender(full_profiles, network)
+#https://user-images.githubusercontent.com/95303784/144875021-2d13e5e2-3935-40b8-b81b-c05128328477.png
+
 '''
-https://user-images.githubusercontent.com/95303784/144875021-2d13e5e2-3935-40b8-b81b-c05128328477.png
+A plot a nodeok fokszámát az életkor szerint ábrázolja, nemek szerinti bontásban.
+
 Minimális különbség figyelhető meg az ismerősök számában a nemeket illetően,
 fiatalabb korban a nőknek általában több ismerősük van, azonban 35 éves korban
 változik a helyzet. Látható a korábban említett tény, hogy a fiatalok többségben
@@ -51,8 +60,11 @@ feltehetően általában a gyerekeik és csak kevesebb idős ember.
 
 plt.figure()
 fn.plot_node_average_neighbor_degree_by_gender(full_profiles, network)
+#https://user-images.githubusercontent.com/95303784/144875024-3e246db3-3737-4be1-9a6f-887ed5ef5874.png
+
 '''
-https://user-images.githubusercontent.com/95303784/144875024-3e246db3-3737-4be1-9a6f-887ed5ef5874.png
+A plot a nodeok szomszédainak átlagos fokszámát ábrázolja az életkor függvényében, nemek szerinti bontásban.
+
 20 éves kor fölött a férfiak ismerőseinek átlagos fokszáma jelentősen a 
 nők fölött van, a hálózaton több a férfi felhasználó, általában azonos nemből több
 embert ismerünk, a baráti klikkekben is megfigyelhető női és férfi társaásgok.
@@ -62,8 +74,11 @@ egymást, ezáltal a saját és ismerőseik átlagos fokszáma is nagyobb.
 
 plt.figure()
 fn.plot_node_clustering_by_gender(full_profiles, network)
+#https://user-images.githubusercontent.com/95303784/144875029-f7c11c43-3aad-443c-8e3b-4f508b6ad1d6.png
+
 '''
-https://user-images.githubusercontent.com/95303784/144875029-f7c11c43-3aad-443c-8e3b-4f508b6ad1d6.png
+A plot a nodeok klaszterezettségét ábrázolja az életkor függvényében, nemek szerinti bontásban.
+
 A korábban említett feltételezések jelenlétét mutatja az ábra, a klaszterek mutatják,
 hogy alacsonyabb korban nagyon magas, általában az osztályunkkal barátkozunk,
 ahol mindenki ismer mindenkit, majd ahogy dolgozni kezdünk ez a jelenség csökken.
@@ -79,13 +94,16 @@ Idősebb korban a nők klaszterezettsége nő, általában a gyerekeik barátain
 
 plt.figure()
 fn.plot_age_relations_heatmap_genderdiff(male, "Age of male")
-'''
-https://user-images.githubusercontent.com/95303784/144875030-61fa6926-00fd-4dcf-b33d-04dc737754b7.png
-'''
+#https://user-images.githubusercontent.com/95303784/144875030-61fa6926-00fd-4dcf-b33d-04dc737754b7.png
+
 plt.figure()
 fn.plot_age_relations_heatmap_genderdiff(female, "Age of female")
+#https://user-images.githubusercontent.com/95303784/144875032-cadd6c9e-12ab-43c9-bd1a-a53229297ad6.png
+
 '''
-https://user-images.githubusercontent.com/95303784/144875032-cadd6c9e-12ab-43c9-bd1a-a53229297ad6.png
+A plotok külön a férfiak és külön a nők kapcsolatait ábrázolja, kor szerinti bontásban, a negatív életkor azt jelzi, 
+hogy a kapcsolatban a másik személy ellenkező nemű.
+
 A következő 2 ábrát együtt érdemes értelmezni, az ábák ellenkező nemmű ismerőseinek
 része megyegyezik, különbséget az jelenti,hogy az elsőben a női-női, a másodikban a
 férfi-férfi kapcsolatok vannak kiszűrve. Mindkét ábrából átható, hogy leginkább 
@@ -102,12 +120,15 @@ fn.plot_age_relations_heatmap(edges_with_features)
 
 plt.figure()
 fn.plot_age_relations_heatmapv2(fn.genderfilter("FF", edges_with_features), "Female-Female relation")
+#https://user-images.githubusercontent.com/95303784/144875036-e35b086e-1002-4800-9b6a-20913fc45f80.png
 
 plt.figure()
 fn.plot_age_relations_heatmapv2(fn.genderfilter("MF", edges_with_features), "Female-Male relation")
+#https://user-images.githubusercontent.com/95303784/144875010-f0347a92-0ca1-4c36-900f-4f6fb90ca0c4.png
 
 plt.figure()
 fn.plot_age_relations_heatmapv2(fn.genderfilter("MM", edges_with_features), "Male-Male relation")
+#https://user-images.githubusercontent.com/95303784/144875012-b58b205d-2820-485b-acf7-0e1b2768f625.png
 '''
 ezeknek a heatmapeknek nem kéne szimmetrikusnak lenniük?
 
@@ -117,7 +138,13 @@ profiles = fn.portion_separator(network, full_profiles.sample(n=30000), full_pro
 
 plt.figure()
 fn.portion_plot(profiles)
+#https://user-images.githubusercontent.com/95303784/144875015-1424f464-411c-4acc-86ed-4a3c0db1168d.png
+
 '''
+A plot a nodeok szomszédainak megoszlását ábrázolja, az életkor függvényében, a görbéknél a same-opposite
+azt jelenti, hogy a kapcsolat azonos vagy ellenkező neművel jelenlévő kapcsolat, az L5- 5 évnél kisebb a korkülönbség abszolút értéke
+L10- 10 évnél kisebb, 5 évnél nagyobb a korkülönbség abszolútértéke...
+
 Az utolsó ábrán látható annak megoszlása, hogy a különböző korokban milyen arányban
 vannak az adott nembe és korkülönbségbe tartozó ismerősök aránya. Fiatalabb korban
 lényegesen nagyobb részarányt képviselnek a hasonló korú ismerősök, ez egyrészt a 
