@@ -130,6 +130,9 @@ plt.figure()
 fn.plot_age_relations_heatmapv2(fn.genderfilter("MM", edges_with_features), "Male-Male relation")
 #https://user-images.githubusercontent.com/95303784/144875012-b58b205d-2820-485b-acf7-0e1b2768f625.png
 '''
+A heatmapek a különböző típusú kapcsolatok megoszlását az életkor szerinti bontásban ábrázolja, női-női, férfi-férfi típusú
+kapcsolatok megoszlása a két fél életkorának függvényében, az összes ilyen típusú kapcsolathoz viszonyítva.
+
 ezeknek a heatmapeknek nem kéne szimmetrikusnak lenniük?
 
 '''
