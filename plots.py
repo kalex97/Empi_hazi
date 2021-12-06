@@ -22,6 +22,7 @@ female = pd.concat([fn.genderfilter(
 
 fn.plot_degree_distribution(network)
 '''
+https://user-images.githubusercontent.com/95303784/144875018-cb9f8525-0a34-4203-953c-e1999fab0498.png
 Az ábrából látható, hogy a emberek legnagyob része kevés ismerőssel rendelkezik,
 a legtöbb node fokszáma alacsony, viszont van pár ember aki a többiekhez képest
 nagyon sokkal(~100 nagyságrend), az eloszlás nem normális, vannak extrém, kiugró értékek.
@@ -30,6 +31,7 @@ nagyon sokkal(~100 nagyságrend), az eloszlás nem normális, vannak extrém, ki
 plt.figure()
 fn.plot_age_distribution_by_gender(full_profiles)
 '''
+https://user-images.githubusercontent.com/95303784/144875020-697b41c0-99b1-4640-876d-5d723ba2f145.png
 Az adatbázisban 15-50 éves korig vannak megfigyelések, az ábrából látható, hogy
 a közödsségi portálok sokkal népszerűbbek a fiatalok körében, a férfiak vannak
 többségben a 20-40 éves korosztályban, efelett már a nők, ez az eloszlás társadalmi
@@ -39,6 +41,7 @@ szinten is valamelyest megfigylehető.
 plt.figure()
 fn.plot_node_degree_by_gender(full_profiles, network)
 '''
+https://user-images.githubusercontent.com/95303784/144875021-2d13e5e2-3935-40b8-b81b-c05128328477.png
 Minimális különbség figyelhető meg az ismerősök számában a nemeket illetően,
 fiatalabb korban a nőknek általában több ismerősük van, azonban 35 éves korban
 változik a helyzet. Látható a korábban említett tény, hogy a fiatalok többségben
@@ -49,6 +52,7 @@ feltehetően általában a gyerekeik és csak kevesebb idős ember.
 plt.figure()
 fn.plot_node_average_neighbor_degree_by_gender(full_profiles, network)
 '''
+https://user-images.githubusercontent.com/95303784/144875024-3e246db3-3737-4be1-9a6f-887ed5ef5874.png
 20 éves kor fölött a férfiak ismerőseinek átlagos fokszáma jelentősen a 
 nők fölött van, a hálózaton több a férfi felhasználó, általában azonos nemből több
 embert ismerünk, a baráti klikkekben is megfigyelhető női és férfi társaásgok.
@@ -59,6 +63,7 @@ egymást, ezáltal a saját és ismerőseik átlagos fokszáma is nagyobb.
 plt.figure()
 fn.plot_node_clustering_by_gender(full_profiles, network)
 '''
+https://user-images.githubusercontent.com/95303784/144875029-f7c11c43-3aad-443c-8e3b-4f508b6ad1d6.png
 A korábban említett feltételezések jelenlétét mutatja az ábra, a klaszterek mutatják,
 hogy alacsonyabb korban nagyon magas, általában az osztályunkkal barátkozunk,
 ahol mindenki ismer mindenkit, majd ahogy dolgozni kezdünk ez a jelenség csökken.
@@ -74,10 +79,13 @@ Idősebb korban a nők klaszterezettsége nő, általában a gyerekeik barátain
 
 plt.figure()
 fn.plot_age_relations_heatmap_genderdiff(male, "Age of male")
-
+'''
+https://user-images.githubusercontent.com/95303784/144875030-61fa6926-00fd-4dcf-b33d-04dc737754b7.png
+'''
 plt.figure()
 fn.plot_age_relations_heatmap_genderdiff(female, "Age of female")
 '''
+https://user-images.githubusercontent.com/95303784/144875032-cadd6c9e-12ab-43c9-bd1a-a53229297ad6.png
 A következő 2 ábrát együtt érdemes értelmezni, az ábák ellenkező nemmű ismerőseinek
 része megyegyezik, különbséget az jelenti,hogy az elsőben a női-női, a másodikban a
 férfi-férfi kapcsolatok vannak kiszűrve. Mindkét ábrából átható, hogy leginkább 
@@ -90,6 +98,7 @@ idősebb korban csak kevés, feltehetőleg jó barátjuk van.
 
 plt.figure()
 fn.plot_age_relations_heatmap(edges_with_features)
+#https://user-images.githubusercontent.com/95303784/144875034-e99cf8cf-3ecc-4273-b0ca-615fb4cb5f02.png
 
 plt.figure()
 fn.plot_age_relations_heatmapv2(fn.genderfilter("FF", edges_with_features), "Female-Female relation")
