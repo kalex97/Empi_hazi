@@ -133,6 +133,12 @@ fn.plot_age_relations_heatmapv2(fn.genderfilter("MM", edges_with_features), "Mal
 A heatmapek a különböző típusú kapcsolatok megoszlását az életkor szerinti bontásban ábrázolja, női-női, férfi-férfi típusú
 kapcsolatok megoszlása a két fél életkorának függvényében, az összes ilyen típusú kapcsolathoz viszonyítva.
 
+Összességében elmondható, hogy leginkább a hasonló korosztállyal vannak ismerősei az embereknek, amely minden korcsoportban jellemző,
+a kapcsolatok többsége fiatalok között van. Külön tekintve a férfi-férfi és női-női kapcsolatokat, látható, hogy a férfiak inkább ismerősök hasonló
+korú férfiakkal, a nők fiatalabb nőkkel gyakrabban ismerősök. A férfi-női kapcsoltokra kevésbé jellemző az, hogy szigorúan hasonló korú ismerősök lennének,
+ezen kapcsolatok is fiatalabb korban a jellemzőbbek, egyrészt abból adódik, hogy több a fiatal a mintában, másrészt szerepet játszhat a párkeresés is.
+Az anyák valószínűleg gyakrabban ismerősök a gyerekeikkel, a női-női és férfi-női heatmapeken is gyakoribbak az erre utaló kapcsolatok.
+
 ezeknek a heatmapeknek nem kéne szimmetrikusnak lenniük?
 
 '''
